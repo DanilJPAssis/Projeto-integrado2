@@ -18,4 +18,8 @@ CREATE TABLE email (
     data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
 );
+USE projetointegrador2;
+
+DROP TABLE usuarios;
+
 
