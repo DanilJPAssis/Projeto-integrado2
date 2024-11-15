@@ -2,14 +2,16 @@ CREATE DATABASE projetointegrador2;
 
 USE projetointegrador2;
 
-CREATE TABLE email (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    usuario_id INT NOT NULL,
-    endereco_email VARCHAR(255) NOT NULL UNIQUE,
-    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+CREATE DATABASE IF NOT EXISTS AltaConstrucoes;
+USE AltaConstrucoes;
+
+CREATE TABLE IF NOT EXISTS Emails(
+id INTAUTO_INCREMENT PRIMARY KEY,
+subject VARCHAR(255) NOT NULL,
+createdAt DATETIME DEFAULT
+CURRENT_TIMESTAMP
 );
-USE projetointegrador2;
+
 
 
 
