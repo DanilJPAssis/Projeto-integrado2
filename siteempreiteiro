@@ -1,7 +1,3 @@
-CREATE DATABASE projetointegrador2;
-
-USE projetointegrador2;
-
 CREATE DATABASE IF NOT EXISTS AltaConstrucoes;
 USE AltaConstrucoes;
 
